@@ -4,7 +4,7 @@
 	<title>js</title>
 </head>
 <script type="text/javascript">
-/*function createMyTextbox()
+function createMyTextbox()
 {
 		var txt1 = document.createElement('input');
 		txt1.setAttribute('type', 'text');
@@ -18,7 +18,7 @@
 		document.getElementById('topdiv').appendChild(txt2);
 		document.getElementById('topdiv').appendChild(txt3);
 }
-*/
+
 
 var newElement = document.createElement("IMG");
 
@@ -33,25 +33,21 @@ var Element2 = document.getElementById("btn1");
 document.getElementById("new-task").removeChild(newElement);
 document.getElementById("new-task").removeChild(Element2);
 
-
-
 }
 
 function Replace() {
 
 	var oldElement = document.getElementById('btn1');
-	document.getElementById("new-task").replaceChild(newElement,oldElement);
-		
+	document.getElementById("new-task").replaceChild(newElement,oldElement);	
 }
 </script>
 
 <body>
-
-<!-- <div id="topdiv">	
+<div id="topdiv">	
 </div>
 <div id="show">
 <button onclick="createMyTextbox()">Click me</button>
-</div> -->
+</div> 
 
 <br>
 <br>
@@ -61,7 +57,6 @@ function Replace() {
 	<button onclick="Replace()">Replace me</button>
 	<button onclick="Remove()">Remove me</button> 
 </div>
-
 
 </body>
 </html>
