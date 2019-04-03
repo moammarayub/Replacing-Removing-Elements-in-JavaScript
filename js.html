@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<script type="text/javascript">
+/*function createMyTextbox()
+{
+		var txt1 = document.createElement('input');
+		txt1.setAttribute('type', 'text');
+		txt1.placeholder = "Enter Email";
+		var txt2 = document.createElement('input');
+		txt2.placeholder = "Enter Password";
+		txt2.setAttribute('type', 'password');
+		var txt3 = document.createElement('button');
+		txt3.innerHTML="Login";
+		document.getElementById('topdiv').appendChild(txt1);
+		document.getElementById('topdiv').appendChild(txt2);
+		document.getElementById('topdiv').appendChild(txt3);
+}
+*/
+
+var newElement = document.createElement("IMG");
+
+  newElement.setAttribute("src", "gray.png");
+  newElement.setAttribute("width", "150");
+  newElement.setAttribute("height", "150");
+  newElement.setAttribute("alt", "gray shirt");
+ 
+function Remove() {
+
+var Element2 = document.getElementById("btn1");
+document.getElementById("new-task").removeChild(newElement);
+document.getElementById("new-task").removeChild(Element2);
+
+
+
+}
+
+function Replace() {
+
+	var oldElement = document.getElementById('btn1');
+	document.getElementById("new-task").replaceChild(newElement,oldElement);
+		
+}
+</script>
+
+<body>
+
+<!-- <div id="topdiv">	
+</div>
+<div id="show">
+<button onclick="createMyTextbox()">Click me</button>
+</div> -->
+
+<br>
+<br>
+
+<div id="new-task">
+	<img src="pink.png" id="btn1" height="150px" width="150px" alt="pink shirt">
+	<button onclick="Replace()">Replace me</button>
+	<button onclick="Remove()">Remove me</button> 
+</div>
+
+
+</body>
+</html>
